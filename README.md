@@ -58,18 +58,21 @@ Open the main.py file in your preferred Python compiler and press the Run button
 
 - Using the Terminal:
   
-Alternatively, you can run the app directly from the terminal by navigating to the directory where main.py is located. For example: 
+Alternatively, you can run the app directly from the terminal by navigating to the directory where main.py is located.  For example: 
 
 python "C:/Users/samia/OneDrive/Desktop/Python Project/main.py"
 
-## Game Elements
-- xxyy 
-- xxyy 
 
 ## Libraries Used
 The following libraries are used in this project:
-- Pygame
-- xxyy
+
+- Tkinter:
+
+Used to create the graphical user interface (GUI) for the app. It provides the interactive elements like buttons, input fields, and labels.
+
+- Matplotlib:
+
+Used for visualizing student marks in a bar chart format. It helps create clear, graphical representations of the student data for easy comparison.
 
 ## Project Structure
 - `ErrorHandling/`: Contains classes for handling various errors.
