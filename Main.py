@@ -15,7 +15,16 @@ from tkinter import messagebox
 from tkinter import simpledialog
 import matplotlib.pyplot as plt 
 
-# List to store student data
+#This part of the code is where the app starts keeping track of all the students and their marks. 
+#It first creates an empty list called students, which will store each student's information as a small dictionary (with their name and mark). 
+#Then there's a function called add_student(name, mark) that is used to add a student to the list. 
+#But before doing that, the function checks if the inputs are okay. It checks if the name is not empty and is actually a string (not a number or something else). 
+#If the name is invalid, it raises a ValueError with a message saying "Invalid name."
+#After that, it checks the mark to make sure it's a number (either an integer or float), and that it's between 0 and 100. 
+#If the mark doesn't follow these rules, it raises another ValueError that says "Mark should be between 0 and 100."
+#Once the name and mark are confirmed to be okay, it adds them to the list. 
+#It also uses .strip() on the name, which removes any extra spaces at the beginning or end.
+
 student = []
 
 def add_student(name, mark):
