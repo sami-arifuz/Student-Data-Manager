@@ -50,10 +50,17 @@ Clears all the stored student data from the app.
 Closes the application.
 
 ### Running the app
-```python
-python main.py
-```
+This app requires only a single file, main.py. It can be opened and run in two ways:
 
+- Using a Compiler:
+
+Open the main.py file in your preferred Python compiler and press the Run button to start the app.
+
+- Using the Terminal:
+  
+Alternatively, you can run the app directly from the terminal by navigating to the directory where main.py is located. For example: 
+
+python "C:/Users/samia/OneDrive/Desktop/Python Project/main.py"
 
 ## Game Elements
 - xxyy 
