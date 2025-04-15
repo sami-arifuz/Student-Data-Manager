@@ -69,6 +69,18 @@ def handle_search():
         else:
             messagebox.showinfo("Results", "No matching students found.")
 
+def handle_sort():
+  sort_students_by_marks()
+  if students:
+    msg = "\n".join(f"{s['name']} - {s['mark']}" for s in students)
+    messagebox.showinfo("Sorted", msg)
+  else:
+    messagebox.showinfo("Sorted", "No students to sort.")
+    
+    
+  
+  
+
     
   
   
