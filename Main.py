@@ -58,6 +58,19 @@ def handle_add():
     messagebox.showerror("Input Error", str(ve))
   except Exception as e:
     messagebox.showerror("Error", str(e))
+
+def handle_search():
+  name = simpledialog.askstring("Search", "Enter name to search:")
+  if name:
+    results = search_student(name)
+        if results:
+            msg = "\n".join(f"{s['name']} - {s['mark']}" for s in results)
+            messagebox.showinfo("Results", msg)
+        else:
+            messagebox.showinfo("Results", "No matching students found.")
+
+    
+  
   
     
  
