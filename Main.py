@@ -35,6 +35,20 @@ def visualize_marks():
   plt.tight_layout()
   plt.show()
 
+# GUI CODE
+
+root = tk.tk()
+root.title("Student Data Manager")
+root.geometry("450x500")
+root.config(bg="#f5f5f5")
+
+font_style = ("Helvetica", 12)
+button_style = {'width': 20, 'height': 2, 'bg': '#4CAF50', 'fg': 'white', 'font': font_style, 'bd': 0, 'relief': 'solid'}
+label_style = {'font': ("Arial", 14), 'bg': '#f5f5f5'}
+
+
+
+
 
   
         
