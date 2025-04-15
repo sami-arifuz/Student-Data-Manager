@@ -76,6 +76,21 @@ def handle_sort():
     messagebox.showinfo("Sorted", msg)
   else:
     messagebox.showinfo("Sorted", "No students to sort.")
+
+#Inputs 
+
+tk.Label(root, text="Student Name:", **label_style).pack(pady=10)
+name_entry = tk.Entry(root, font=font_style)
+name_entry.pack()
+
+tk.Label(root, text="Mark (0-100):", **label_style).pack(pady=10)
+mark_entry = tk.Entry(root, font=font_style)
+mark_entry.pack()
+
+
+
+
+
     
     
   
