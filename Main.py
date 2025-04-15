@@ -87,6 +87,17 @@ tk.Label(root, text="Mark (0-100):", **label_style).pack(pady=10)
 mark_entry = tk.Entry(root, font=font_style)
 mark_entry.pack()
 
+# Buttons
+tk.Button(root, text="Add Student", command=handle_add, **button_style).pack(pady=10)
+tk.Button(root, text="Search Student", command=handle_search, **button_style).pack(pady=5)
+tk.Button(root, text="Sort Students", command=handle_sort, **button_style).pack(pady=5)
+tk.Button(root, text="Show Chart", command=visualize_marks, **button_style).pack(pady=5)
+tk.Button(root, text="Exit", command=root.quit, **button_style).pack(pady=20)
+
+# Start the GUI loop
+root.mainloop()
+
+
 
 
 
