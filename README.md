@@ -74,8 +74,6 @@ Used to create the graphical user interface (GUI) for the app. It provides the i
 
 Used for visualizing student marks in a bar chart format. It helps create clear, graphical representations of the student data for easy comparison.
 
-## Project Structure
-- `ErrorHandling/`: Contains classes for handling various errors.
-xxyy
+
 
 
