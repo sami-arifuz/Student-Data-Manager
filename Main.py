@@ -46,6 +46,23 @@ font_style = ("Helvetica", 12)
 button_style = {'width': 20, 'height': 2, 'bg': '#4CAF50', 'fg': 'white', 'font': font_style, 'bd': 0, 'relief': 'solid'}
 label_style = {'font': ("Arial", 14), 'bg': '#f5f5f5'}
 
+def handle_add():
+  try:
+    name = name_entry.get()
+    mark = float(mark_entry.get())
+    add_student(name, mark)
+    messagebox.showinfo("Success", f"Added {name} with {mark} marks.")
+    name_entry.delete(0, tk.END)
+    mark_entry.delete(0, tk.END)
+  except ValueError as ve:
+    messagebox.showerror("Input Error", str(ve))
+  except Exception as e:
+    messagebox.showerror("Error", str(e))
+  
+    
+ 
+  
+
 
 
 
