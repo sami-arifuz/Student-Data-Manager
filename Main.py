@@ -19,6 +19,22 @@ def search_student(name):
 def sort_students_by_marks():
   students.sort(key=lambda x: x['mark'], reverse=True)
 
+def visualize_marks():
+  if not students:
+    messagebox.showinfo("Info", "No data to visualize.")
+    return
+  names = [s['name'] for s in students]
+  marks = [s['mark'] for s in students]
+  
+  plt.figure(figsize=(10, 6))
+  plt.bar(names, marks, color='skyblue')
+  plt.xlabel('Students')
+  plt.ylabel('Marks')
+  plt.title('Student Marks Visualization')
+  plt.xticks(rotation=45)
+  plt.tight_layout()
+  plt.show()
+
 
   
         
