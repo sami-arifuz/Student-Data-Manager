@@ -20,11 +20,29 @@ To run this Student Data Manager app, you need Python, and the libraries Tkinter
 
 pip install matplotlib
 
-## How to Play
-- Press the x key to do xxyy.
-- xxyy
+## How to use
+Enter Student Name and Marks:
+Type the student's name and their marks in the input fields at the top of the app.
 
-### Running the Game
+Add Student button:
+Click this button to save the entered student and marks into the list.
+
+Search Student button:
+Allows you to search for a student by name and view their marks if found.
+
+Sort by Marks (Sort by Marks button):
+Sorts all students in descending order based on their marks.
+
+Show Graph button:
+Displays a bar chart of all student names and their corresponding marks.
+
+Clear All button:
+Clears all the stored student data from the app.
+
+Exit button:
+Closes the application.
+
+### Running the app
 ```python
 python main.py
 ```
