@@ -51,6 +51,13 @@ def search_student(name):
 def sort_students_by_marks():
   students.sort(key=lambda x: x['mark'], reverse=True)
 
+#This function is called visualize_marks(), and it’s used to show a bar graph of all the students and their marks. 
+#First, it checks if the students list is empty by using if not students: 
+#If there are no students added yet, it pops up a message box that says “No data to visualize” and then stops the function using return. 
+#If there is data, it creates two separate lists: names and marks. 
+#The names list collects all the student names, and the marks list collects their corresponding marks. 
+#These two lists are later used to plot the bar graph, with names on the x-axis and marks on the y-axis.
+
 def visualize_marks():
   if not students:
     messagebox.showinfo("Info", "No data to visualize.")
