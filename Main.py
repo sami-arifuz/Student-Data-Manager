@@ -34,6 +34,11 @@ def add_student(name, mark):
     raise ValueError("Mark should be between 0 and 100.")
   students.append({'name': name.strip(), 'mark': mark})
 
+#This function is used to search for a student by name from the list of students. 
+#It's called search_student(name), and it takes one input: the name you're looking for. 
+#Inside the function, it goes through the students list and looks for any student whose name contains the same input, 
+#ignoring whether it's upper or lowercase  using .lower().
+
 def search_student(name):
   return [s for s in students if name.lower() in s['name'].lower()]
 
