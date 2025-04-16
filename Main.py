@@ -42,6 +42,12 @@ def add_student(name, mark):
 def search_student(name):
   return [s for s in students if name.lower() in s['name'].lower()]
 
+#This function is used to sort all the students based on their marks, from highest to lowest. 
+#It's called sort_students_by_marks(), and it doesn’t require any input because it works directly with the students list that’s already in the code. 
+#Inside the function, it uses the .sort() method, which arranges the items in the list. 
+#The part key=lambda x: x['mark'] tells Python to look at the 'mark' value inside each student’s data when sorting. 
+#The reverse=True part means it will sort in descending order, so the student with the highest mark will appear first in the list. 
+
 def sort_students_by_marks():
   students.sort(key=lambda x: x['mark'], reverse=True)
 
