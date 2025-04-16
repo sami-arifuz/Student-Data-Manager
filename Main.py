@@ -64,6 +64,11 @@ def visualize_marks():
     return
   names = [s['name'] for s in students]
   marks = [s['mark'] for s in students]
+
+#This code creates and shows a bar graph of student marks. 
+#It sets the graph size, draws the bars using student names and marks, and colors them light blue. 
+#Labels are added to the x and y axes, and the title is set as "Student Marks Visualization." 
+#The student names on the x-axis are rotated for better readability. Finally, the graph is displayed using plt.show().
   
   plt.figure(figsize=(10, 6))
   plt.bar(names, marks, color='skyblue')
