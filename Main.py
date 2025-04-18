@@ -9,6 +9,7 @@
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import simpledialog
+import matplotlib.pyplot as plt
 
 #This part of the code is where the app starts keeping track of all the students and their marks. 
 #It first creates an empty list called students, which will store each student's information as a small dictionary (with their name and mark). 
