@@ -1,13 +1,9 @@
 
 #This part of the code is responsible for importing the needed libraries that make the app work. 
-
 #First, the line import tkinter as tk brings in the Tkinter library, which is the standard GUI (Graphical User Interface) toolkit in Python. 
-
 #The second line, from tkinter import messagebox, imports a specific module from Tkinter that allows the program to display pop-up messages to the user.
 #This is used for showing alerts, confirmations, or information messages.
-
 #The next line, from tkinter import simpledialog, is used to create input dialogs that ask the user for information, like a name or number, through a simple pop-up window.
-
 #Lastly, import matplotlib.pyplot as plt brings in the matplotlib.pyplot module, which is a powerful plotting library used to create visualizations such as bar charts and line graphs.
 
 import tkinter as tk
