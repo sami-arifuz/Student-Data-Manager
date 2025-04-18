@@ -88,6 +88,12 @@ font_style = ("Helvetica", 12)
 button_style = {'width': 20, 'height': 2, 'bg': '#4CAF50', 'fg': 'white', 'font': font_style, 'bd': 0, 'relief': 'solid'}
 label_style = {'font': ("Arial", 14), 'bg': '#f5f5f5'}
 
+#This function is works when the user clicks the “Add Student” button in the app. 
+#It first gets the name and mark from the user in the  input fields. 
+#Then it converts the mark into a number and uses the add_student() function to save the data. 
+#If everything is fine, it shows a success message and clears the input fields. 
+#If something is wrong, like the name is empty or the mark is not a valid number from 1- 100, it shows an error message using messagebox. 
+
 def handle_add():
   try:
     name = name_entry.get()
