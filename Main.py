@@ -123,6 +123,11 @@ def handle_search():
         else:
             messagebox.showinfo("Results", "No matching students found.")
 
+#This function is called when the user clicks the “Sort by Marks” button. 
+#It sorts all the students in the list from highest to lowest marks using the sort_students_by_marks() function. 
+#If there are students in the list, it shows their names and marks in sorted order in a pop-up window. 
+#If the list is empty, it shows a message saying there's nothing to sort.
+
 def handle_sort():
   sort_students_by_marks()
   if students:
