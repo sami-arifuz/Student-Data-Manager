@@ -149,7 +149,13 @@ tk.Label(root, text="Mark (0-100):", **label_style).pack(pady=10)
 mark_entry = tk.Entry(root, font=font_style)
 mark_entry.pack()
 
-# Buttons
+#This section of the code creates all the buttons in the app, each one made for a specific action. 
+#The “Add Student” button allows users to add a new student to the list. 
+#The “Search Student” button opens a dialog box where users can type a name to find matching students. 
+#The “Sort Students” button arranges the student list from highest to lowest marks. 
+#The “Show Chart” button displays a bar graph of all the students and their marks. 
+#The “Exit” button safely closes the app. 
+
 tk.Button(root, text="Add Student", command=handle_add, **button_style).pack(pady=10)
 tk.Button(root, text="Search Student", command=handle_search, **button_style).pack(pady=5)
 tk.Button(root, text="Sort Students", command=handle_sort, **button_style).pack(pady=5)
