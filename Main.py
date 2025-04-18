@@ -136,7 +136,10 @@ def handle_sort():
   else:
     messagebox.showinfo("Sorted", "No students to sort.")
 
-#Inputs 
+#This part of the code creates the input section of the app. 
+#It first adds a label that says “Student Name:” and an entry box for typing the name. 
+#Then creates another label  called “Mark (0-100):” with an entry box for the user to type the student’s mark. 
+#This allows users to enter the students data, and the labels help make everything  easy to understand which box is for what entry. 
 
 tk.Label(root, text="Student Name:", **label_style).pack(pady=10)
 name_entry = tk.Entry(root, font=font_style)
