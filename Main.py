@@ -162,7 +162,10 @@ tk.Button(root, text="Sort Students", command=handle_sort, **button_style).pack(
 tk.Button(root, text="Show Chart", command=visualize_marks, **button_style).pack(pady=5)
 tk.Button(root, text="Exit", command=root.quit, **button_style).pack(pady=20)
 
-# Start the GUI loop
+#This line starts the main event loop of the app using root.mainloop(). 
+#It keeps the window open and makes the app interactive, allowing it to respond to user actions like button clicks or text input. 
+#Without this line, the app window would appear and immediately close. 
+
 root.mainloop()
 
 
