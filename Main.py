@@ -107,6 +107,12 @@ def handle_add():
   except Exception as e:
     messagebox.showerror("Error", str(e))
 
+#This function runs when the user clicks the “Search Student” button. 
+#It opens a small input box asking the user to type a name. 
+#When the user types a name, the function looks for students whose names match. 
+#When match found, it shows their names and marks in a pop-up message. 
+#If no matches are found, it shows a message saying "No matching students found." 
+
 def handle_search():
   name = simpledialog.askstring("Search", "Enter name to search:")
   if name:
