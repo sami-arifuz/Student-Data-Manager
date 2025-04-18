@@ -79,7 +79,9 @@ def visualize_marks():
   plt.tight_layout()
   plt.show()
 
-# GUI CODE
+#This part of the code sets up the main GUI window using Tkinter. 
+#It starts by creating a window (root = tk.Tk()) and gives it a title and size. 
+#The background color is set to light gray. Then, it defines a custom font style and creates styles for buttons and labels.
 
 root = tk.tk()
 root.title("Student Data Manager")
